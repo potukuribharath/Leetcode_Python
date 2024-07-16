@@ -22,8 +22,7 @@ class Solution:
                         rem=brackets[i][0]-brackets[i-1][0]
                         tax+=rem*(brackets[i][1])/100
                         income-=rem
-                        if income==0:
-                            break
+                       
                        
 
                     else:
