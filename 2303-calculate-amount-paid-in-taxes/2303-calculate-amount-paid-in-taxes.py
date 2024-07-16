@@ -14,10 +14,9 @@ class Solution:
             else:
                 tax+=income*(brackets[0][1])/100
                 return tax
-            print(tax)
+    
             for i in range(1,len(brackets)):
                 
-                print(tax)
                 if income > 0:
                     if income>=brackets[i][0]-brackets[i-1][0]:
                         rem=brackets[i][0]-brackets[i-1][0]
@@ -29,10 +28,5 @@ class Solution:
                         tax+=income*(brackets[i][1])/100
                         break
                         
-                    
-                    
-                            
-            if tax<0:
-                return -(tax)
             return tax
         
